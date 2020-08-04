@@ -1,0 +1,9 @@
+node{
+   stage('SCM checkout'){
+     git 'https://github.com/Taran06/my-app'
+   }
+   stage('compile-package){
+    sh 'mvn package'
+   } 
+   
+}   
